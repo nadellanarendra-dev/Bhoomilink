@@ -84,7 +84,15 @@
 
                         </li>
 
-                     @*    <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="SellProperty"
+                               asp-action="Index">
+                                Sell Property
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
 
                             <a class="nav-link"
                                asp-controller="Home"
@@ -94,7 +102,7 @@
 
                             </a>
 
-                        </li> *@
+                        </li>
 
                         <li class="nav-item">
 
@@ -106,26 +114,6 @@
 
                             </a>
 
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link"
-                               asp-controller="Home"
-                               asp-action="Contact">
-
-                                Privacy Policy
-
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link"
-                               asp-controller="SellProperty"
-                               asp-action="Index">
-                                Sell Property
-                            </a>
                         </li>
 
                     </ul>
@@ -148,64 +136,203 @@
 
     <!-- Footer -->
     <footer class="site-footer mt-5">
+
         <div class="container">
-            <div class="row g-4 align-items-start">
-                <!-- Logo Section -->
-                <div class="col-lg-4 col-md-6">
-                    <a asp-controller="Home" asp-action="Index" class="d-inline-block mb-3">
-                        <img src="~/images/f96ca674-2568-412c-bd0c-d75e6436a94c.png"
+
+            <div class="row g-4">
+
+                <!-- Logo -->
+
+                <div class="col-lg-4">
+
+                    <a asp-controller="Home"
+                       asp-action="Index">
+
+                        <img src="~/images/logo.png"
                              class="footer-logo"
                              alt="BhoomiLink" />
+
                     </a>
-                    <p class="footer-about">Your trusted platform for buying, selling, and discovering properties across Andhra Pradesh.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    </div>
+
+                    <p class="footer-about mt-3">
+
+                        Your trusted platform for buying, selling, and discovering
+                        properties across Andhra Pradesh.
+
+                    </p>
+
                 </div>
 
                 <!-- Quick Links -->
+
                 <div class="col-lg-2 col-md-6">
+
                     <h6>Quick Links</h6>
+
                     <ul class="list-unstyled footer-list">
-                        <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#" class="footer-link">Buy Properties</a></li>
-                        <li><a href="#" class="footer-link">About Us</a></li>
-                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Index"
+                               class="footer-link">
+
+                                Home
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Property"
+                               asp-action="BuyProperties"
+                               class="footer-link">
+
+                                Buy Properties
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="SellProperty"
+                               asp-action="Index"
+                               class="footer-link">
+
+                                Sell Property
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="About"
+                               class="footer-link">
+
+                                About Us
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Home"
+                               asp-action="Contact"
+                               class="footer-link">
+
+                                Contact Us
+
+                            </a>
+                        </li>
+
                     </ul>
+
+                </div>
+
+                <!-- Legal -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h6>Legal</h6>
+
+                    <ul class="list-unstyled footer-list">
+
+                        <li>
+
+                            <a asp-controller="Home"
+                               asp-action="PrivacyPolicy"
+                               class="footer-link">
+
+                                Privacy Policy
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a asp-controller="Home"
+                               asp-action="Terms"
+                               class="footer-link">
+
+                                Terms & Conditions
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a asp-controller="Home"
+                               asp-action="Disclaimer"
+                               class="footer-link">
+
+                                Disclaimer
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
                 </div>
 
                 <!-- Contact -->
-                <div class="col-lg-3 col-md-6">
+
+                <div class="col-lg-3 col-md-12">
+
                     <h6>Contact Us</h6>
+
                     <ul class="list-unstyled footer-contact">
+
                         <li>
-                            <span><i class="bi bi-telephone"></i></span>
-                            <a href="tel:+91-XXXXXXXXXX">+91-9581751622</a>
+
+                            <i class="bi bi-telephone"></i>
+
+                            <a href="tel:+919581751622">
+
+                                +91 95817 51622
+
+                            </a>
+
                         </li>
+
                         <li>
-                            <span><i class="bi bi-envelope"></i></span>
-                            <a href="mailto:contact@bhoomilink.com">contact@bhoomilink.com</a>
+
+                            <i class="bi bi-envelope"></i>
+
+                            <a href="mailto:contact@bhoomilink.com">
+
+                               bhoomilinks@gmail.com
+
+                            </a>
+
                         </li>
+
                         <li>
-                            <span><i class="bi bi-geo-alt"></i></span>
+
+                            <i class="bi bi-geo-alt"></i>
+
                             Andhra Pradesh, India
+
                         </li>
+
                     </ul>
+
+                    <a asp-controller="SellProperty"
+                       asp-action="Index"
+                       class="btn btn-success mt-3">
+
+                        <i class="bi bi-plus-circle me-2"></i>
+
+                        Post Property
+
+                    </a>
+
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-cta">
-                        <h6>Ready to list?</h6>
-                        <p>Reach property buyers faster with BhoomiLink.</p>
-                        <a href="#" class="btn btn-success">Post Property</a>
-                    </div>
-                </div>
             </div>
 
             <hr />
+
+            <!-- Property Disclaimer -->
+
             <div class="footer-disclaimer">
 
                 <div class="d-flex align-items-start">
@@ -217,13 +344,14 @@
                         <h6>Property Disclaimer</h6>
 
                         <p>
+
                             BhoomiLink manually reviews property submissions before publishing.
-                            While we strive to provide genuine property listings, buyers and tenants
-                            are advised to independently verify ownership, legal documents,
-                            government approvals, property dimensions, pricing, and other details
-                            before making any payment or transaction.
-                            BhoomiLink acts only as a property listing platform and is not a party
-                            to any sale, purchase, rental, or lease agreement.
+                            Buyers and tenants are advised to independently verify ownership,
+                            legal documents, government approvals, pricing, and all other
+                            property details before making any payment or transaction.
+                            BhoomiLink acts solely as a property listing platform and is not
+                            a party to any property transaction.
+
                         </p>
 
                     </div>
@@ -231,18 +359,48 @@
                 </div>
 
             </div>
+
             <hr />
+
+            <!-- Bottom -->
+
             <div class="footer-bottom">
-                <div>
-                    <p>&copy; 2026 BhoomiLink. All rights reserved.</p>
-                </div>
+
+                <p class="mb-0">
+
+                    © 2026 BhoomiLink. All Rights Reserved.
+
+                </p>
+
                 <div class="footer-bottom-links">
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Support</a>
+
+                    <a asp-controller="Home"
+                       asp-action="PrivacyPolicy">
+
+                        Privacy
+
+                    </a>
+
+                    <a asp-controller="Home"
+                       asp-action="Terms">
+
+                        Terms
+
+                    </a>
+
+                    <a asp-controller="Home"
+                       asp-action="Disclaimer">
+
+                        Disclaimer
+
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </footer>
 
     <!-- Scripts -->

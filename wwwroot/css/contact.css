@@ -1,0 +1,191 @@
+﻿/*=========================================
+CONTACT HERO
+=========================================*/
+
+.contact-hero {
+    background: linear-gradient(135deg, #f8fff9 0%, #ffffff 100%);
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(25,135,84,.1);
+    color: #198754;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.contact-hero h1 {
+    color: #198754;
+}
+
+.contact-hero .lead {
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/*=========================================
+            CONTACT CARDS
+=========================================*/
+
+.contact-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+    .contact-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(0,0,0,.12);
+    }
+
+.contact-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.whatsapp-bg {
+    background: #25D366;
+}
+
+.contact-card h5 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #198754;
+}
+
+.contact-card p {
+    color: #6c757d;
+    min-height: 55px;
+    line-height: 1.7;
+}
+
+
+/*=========================================
+            BUSINESS HOURS
+=========================================*/
+
+.business-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border-left: 6px solid #198754;
+}
+
+.business-icon {
+    font-size: 70px;
+    color: #198754;
+}
+
+
+/*=========================================
+            HELP BOX
+=========================================*/
+
+.help-box {
+    background: linear-gradient(135deg,#198754,#157347);
+    color: #fff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 15px 35px rgba(25,135,84,.25);
+}
+
+    .help-box h2 {
+        color: #fff;
+    }
+
+    .help-box p {
+        color: rgba(255,255,255,.9);
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .help-box .btn {
+        min-width: 220px;
+        margin-top: 10px;
+    }
+
+    .help-box .btn-outline-success {
+        border-color: #fff;
+        color: #fff;
+    }
+
+        .help-box .btn-outline-success:hover {
+            background: #fff;
+            color: #198754;
+        }
+
+
+/*=========================================
+            BUTTONS
+=========================================*/
+
+.btn {
+    transition: .3s;
+}
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media (max-width:991px) {
+
+    .contact-hero {
+        padding: 60px 0;
+    }
+
+    .business-card {
+        text-align: center;
+    }
+
+    .business-icon {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+    .help-box {
+        padding: 40px 25px;
+    }
+
+        .help-box .btn {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+}

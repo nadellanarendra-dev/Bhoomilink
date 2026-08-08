@@ -756,3 +756,17 @@ img {
     margin-bottom: 5px;
 }
 
+.demo-alert {
+    background: #fff8e6;
+    border-left: 6px solid #f59e0b;
+}
+
+    .demo-alert h6 {
+        color: #b45309;
+    }
+
+    .demo-alert p {
+        color: #555;
+        line-height: 1.7;
+    }
+

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<link href="~/css/about.css" rel="stylesheet" />
+
+@await Html.PartialAsync("Partials/_AboutHero")
+
+<div class="section-divider"></div>
+@await Html.PartialAsync("Partials/_OurStory")
+
+@await Html.PartialAsync("Partials/_MissionVision")
+
+@await Html.PartialAsync("Partials/_OurValues")
+
